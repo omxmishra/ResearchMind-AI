@@ -1,0 +1,10 @@
+2026-07-20 01:57:31 | INFO     | __main__:load_raw_data:11 | Loading raw data from D:\ResearchMind-AI\data\raw\arxiv_papers.csv
+2026-07-20 01:58:14 | INFO     | __main__:load_raw_data:11 | Loading raw data from D:\ResearchMind-AI\data\raw\arxiv_papers.csv
+2026-07-20 01:58:14 | INFO     | __main__:load_raw_data:13 | Loaded 7701 rows with 26 columns
+2026-07-20 01:58:14 | INFO     | __main__:inspect_data:18 | Running data inspection
+2026-07-20 01:58:14 | INFO     | __main__:save_raw_snapshot:30 | Saved raw snapshot to D:\ResearchMind-AI\data\processed\raw_snapshot.pkl
+2026-07-20 01:58:14 | INFO     | __main__:<module>:37 | Ingestion complete
+2026-07-20 01:59:36 | INFO     | __main__:preprocess:69 | Preprocessing 7701 rows
+2026-07-20 01:59:49 | INFO     | __main__:preprocess:80 | Preprocessed 7701 valid papers, skipped 0
+2026-07-20 01:59:50 | INFO     | __main__:save_papers:88 | Saved 7701 papers to D:\ResearchMind-AI\data\processed\papers.pkl
+2026-07-20 01:59:50 | INFO     | __main__:<module>:106 | Preprocessing complete
