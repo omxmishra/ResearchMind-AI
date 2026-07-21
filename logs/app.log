@@ -8,3 +8,16 @@
 2026-07-20 01:59:49 | INFO     | __main__:preprocess:80 | Preprocessed 7701 valid papers, skipped 0
 2026-07-20 01:59:50 | INFO     | __main__:save_papers:88 | Saved 7701 papers to D:\ResearchMind-AI\data\processed\papers.pkl
 2026-07-20 01:59:50 | INFO     | __main__:<module>:106 | Preprocessing complete
+2026-07-21 12:57:54 | INFO     | __main__:<module>:11 | Starting embedding generation pipeline
+2026-07-21 12:57:54 | INFO     | __main__:<module>:13 | Loading papers from D:\ResearchMind-AI\data\processed\papers.pkl
+2026-07-21 12:57:54 | INFO     | __main__:<module>:16 | Loaded 7701 papers
+2026-07-21 12:57:54 | INFO     | __main__:<module>:25 | No cache found — generating embeddings
+2026-07-21 12:57:54 | INFO     | app.services.embeddings.embedding_generator:__init__:13 | Loading embedding model: all-MiniLM-L6-v2
+2026-07-21 13:03:14 | INFO     | app.services.embeddings.embedding_generator:__init__:16 | Model loaded — embedding dim: 384
+2026-07-21 13:03:14 | INFO     | app.services.embeddings.embedding_generator:embed_papers:39 | Embedding 7701 papers using title+abstract
+2026-07-21 13:03:14 | INFO     | app.services.embeddings.embedding_generator:embed_texts:19 | Embedding 7701 texts
+2026-07-21 13:06:27 | INFO     | __main__:<module>:29 | Generated embeddings shape: (7701, 384)
+2026-07-21 13:06:27 | INFO     | app.services.embeddings.embedding_cache:save:31 | Cached 7701 embeddings to D:\ResearchMind-AI\data\embeddings\embeddings.npy
+2026-07-21 13:06:27 | INFO     | __main__:<module>:35 | Embedding generation complete
+2026-07-21 13:06:27 | INFO     | app.services.embeddings.embedding_cache:load:34 | Loading cached embeddings from D:\ResearchMind-AI\data\embeddings\embeddings.npy
+2026-07-21 13:06:27 | INFO     | app.services.embeddings.embedding_cache:load:38 | Loaded embeddings shape: (7701, 384)
