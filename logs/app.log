@@ -21,3 +21,15 @@
 2026-07-21 13:06:27 | INFO     | __main__:<module>:35 | Embedding generation complete
 2026-07-21 13:06:27 | INFO     | app.services.embeddings.embedding_cache:load:34 | Loading cached embeddings from D:\ResearchMind-AI\data\embeddings\embeddings.npy
 2026-07-21 13:06:27 | INFO     | app.services.embeddings.embedding_cache:load:38 | Loaded embeddings shape: (7701, 384)
+2026-07-21 13:09:56 | INFO     | __main__:<module>:12 | Starting vector index build pipeline
+2026-07-21 13:09:56 | INFO     | __main__:<module>:14 | Loading papers from D:\ResearchMind-AI\data\processed\papers.pkl
+2026-07-21 13:09:56 | INFO     | __main__:<module>:17 | Loaded 7701 papers
+2026-07-21 13:09:56 | INFO     | app.services.embeddings.embedding_cache:load:34 | Loading cached embeddings from D:\ResearchMind-AI\data\embeddings\embeddings.npy
+2026-07-21 13:09:56 | INFO     | app.services.embeddings.embedding_cache:load:38 | Loaded embeddings shape: (7701, 384)
+2026-07-21 13:09:56 | INFO     | __main__:<module>:26 | Loaded embeddings shape: (7701, 384)
+2026-07-21 13:09:56 | INFO     | __main__:<module>:27 | Embedding model: all-MiniLM-L6-v2
+2026-07-21 13:09:56 | INFO     | app.vectorstore.faiss_store:build:20 | Building FAISS index for 7701 vectors of dim 384
+2026-07-21 13:09:56 | INFO     | app.vectorstore.faiss_store:build:33 | Index built with 7701 vectors
+2026-07-21 13:09:56 | INFO     | app.vectorstore.faiss_store:save:54 | Saved index to D:\ResearchMind-AI\data\processed\faiss_index.bin
+2026-07-21 13:09:56 | INFO     | app.vectorstore.faiss_store:save:55 | Saved metadata to D:\ResearchMind-AI\data\processed\metadata.pkl
+2026-07-21 13:09:56 | INFO     | __main__:<module>:39 | Vector index build complete
