@@ -1,10 +1,10 @@
 __pycache__/
 *.py[cod]
 *.pyo
-.env
 *.bin
 *.pkl
 *.faiss
+.env/
 data/raw/
 data/processed/
 data/embeddings/
