@@ -4,7 +4,7 @@ __pycache__/
 *.bin
 *.pkl
 *.faiss
-.env/
+.env
 data/raw/
 data/processed/
 data/embeddings/
