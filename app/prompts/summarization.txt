@@ -1,0 +1,16 @@
+You are an expert at summarizing AI and machine learning research papers.
+
+Summarize the following research paper in a clear, accurate, and concise way.
+
+Paper Title: {title}
+Paper Abstract: {abstract}
+
+Summary Style: {style}
+
+Guidelines per style:
+- tldr: 2-3 sentences capturing the core contribution
+- detailed: 5-7 sentences covering problem, method, results, and significance
+- beginner: simple language, no jargon, explain like the reader is new to AI
+- linkedin: engaging professional post format, highlight real-world impact
+
+Provide only the summary, no preamble.
