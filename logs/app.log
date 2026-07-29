@@ -33,3 +33,30 @@
 2026-07-21 13:09:56 | INFO     | app.vectorstore.faiss_store:save:54 | Saved index to D:\ResearchMind-AI\data\processed\faiss_index.bin
 2026-07-21 13:09:56 | INFO     | app.vectorstore.faiss_store:save:55 | Saved metadata to D:\ResearchMind-AI\data\processed\metadata.pkl
 2026-07-21 13:09:56 | INFO     | __main__:<module>:39 | Vector index build complete
+2026-07-24 03:27:59 | INFO     | app.main:lifespan:17 | Starting ResearchMind-AI
+2026-07-24 03:27:59 | INFO     | app.vectorstore.index_manager:load_index:23 | Loading FAISS index into memory
+2026-07-24 03:27:59 | INFO     | app.vectorstore.faiss_store:load:65 | Loaded index with 7701 vectors
+2026-07-24 03:27:59 | INFO     | app.vectorstore.faiss_store:load:66 | Loaded 7701 papers from metadata
+2026-07-24 03:27:59 | INFO     | app.vectorstore.index_manager:load_index:26 | Index ready — 7701 vectors loaded
+2026-07-24 03:27:59 | INFO     | app.main:lifespan:19 | FAISS index loaded — server ready
+2026-07-24 15:43:58 | INFO     | app.api.middleware.logging:dispatch:13 | → GET /docs
+2026-07-24 15:43:58 | INFO     | app.api.middleware.logging:dispatch:18 | ← GET /docs | status=200 | 9.9ms
+2026-07-24 15:43:59 | INFO     | app.api.middleware.logging:dispatch:13 | → GET /openapi.json
+2026-07-24 15:43:59 | INFO     | app.api.middleware.logging:dispatch:18 | ← GET /openapi.json | status=200 | 36.9ms
+2026-07-24 15:44:22 | INFO     | app.api.middleware.logging:dispatch:13 | → GET /api/v1/health
+2026-07-24 15:44:22 | INFO     | app.api.middleware.logging:dispatch:18 | ← GET /api/v1/health | status=200 | 6.3ms
+2026-07-24 15:44:24 | INFO     | app.api.middleware.logging:dispatch:13 | → GET /api/v1/health
+2026-07-24 15:44:24 | INFO     | app.api.middleware.logging:dispatch:18 | ← GET /api/v1/health | status=200 | 3.6ms
+2026-07-24 15:49:42 | INFO     | app.api.middleware.logging:dispatch:13 | → POST /api/v1/search
+2026-07-24 15:49:42 | INFO     | app.services.retrieval.query_expansion:expand_query:36 | Expanded query: 'large language model fine tuning' → added 5 terms
+2026-07-24 15:49:42 | INFO     | app.services.retrieval.semantic_search:search:13 | Semantic search: 'large language model fine tuning finetuning instruction tuni'
+2026-07-24 15:49:42 | INFO     | app.services.embeddings.embedding_generator:__init__:13 | Loading embedding model: all-MiniLM-L6-v2
+2026-07-24 15:49:47 | INFO     | app.services.embeddings.embedding_generator:__init__:16 | Model loaded — embedding dim: 384
+2026-07-24 15:49:47 | INFO     | app.vectorstore.retriever:retrieve:43 | Retrieved 3 results for query 'large language model fine tuning finetuning instru' in 4608.3ms
+2026-07-24 15:49:47 | INFO     | app.api.middleware.logging:dispatch:18 | ← POST /api/v1/search | status=200 | 4622.3ms
+2026-07-24 15:54:30 | INFO     | app.api.middleware.logging:dispatch:13 | → POST /api/v1/search
+2026-07-24 15:54:30 | INFO     | app.services.retrieval.query_expansion:expand_query:36 | Expanded query: 'large language model fine tuning' → added 5 terms
+2026-07-24 15:54:30 | INFO     | app.services.retrieval.semantic_search:search:13 | Semantic search: 'large language model fine tuning finetuning instruction tuni'
+2026-07-24 15:54:30 | INFO     | app.vectorstore.retriever:retrieve:43 | Retrieved 3 results for query 'large language model fine tuning finetuning instru' in 48.7ms
+2026-07-24 15:54:30 | INFO     | app.api.middleware.logging:dispatch:18 | ← POST /api/v1/search | status=200 | 54.3ms
+2026-07-24 16:55:05 | INFO     | app.main:lifespan:21 | ResearchMind-AI shutting down
