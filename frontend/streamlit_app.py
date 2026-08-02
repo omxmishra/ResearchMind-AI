@@ -47,7 +47,7 @@ with st.sidebar:
     rerank = st.toggle("Enable reranking", value=True)
 
     st.markdown("---")
-    st.subheader("🔽 Category Filter")
+    st.subheader(" Category Filter")
     try:
         cats = requests.get(f"{API_BASE}/categories", timeout=3).json().get("categories", [])
         selected_cats = st.multiselect("Filter by category", cats)
